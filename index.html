@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robert Aryeh | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+
+  <!-- Navbar -->
+  <header class="p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">Robert Aryeh</h1>
+    <button id="toggleDark" class="p-2 border rounded">🌙</button>
+  </header>
+
+<!-- Hero Section with 3 horizontal image tiles -->
+<section class="relative min-h-screen flex items-center justify-center bg-repeat bg-center bg-black text-white"
+         style="background-image: url('images/kofi.jpg'); background-size: 33.3% auto;">
+  <div class="absolute inset-0 bg-black/60"></div>
+
+  <div class="relative z-10 p-10 rounded-2xl shadow-xl text-center max-w-2xl w-full mx-4 bg-white/10">
+    <img src="images/rob.jpg" alt="Robert Aryeh" class="mx-auto w-36 h-36 rounded-full border-2 border-white shadow-lg mb-6 ring-8 ring-blue-500 transition-transform hover:scale-105 duration-300" />
+    <h1 class="text-4xl font-bold">Robert Aryeh</h1>
+    <p class="mt-3 text-lg">Cybersecurity Advocate | Full-Stack Developer | Tech for Good</p>
+    <div class="mt-4 space-x-4">
+      <a href="https://linkedin.com/in/robert-aryeh-013938298" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg text-white transition">LinkedIn</a>
+      <a href="https://github.com/AryehRobert/AryehRobert" target="_blank" class="inline-block bg-gray-800 hover:bg-gray-900 px-4 py-2 rounded-lg text-white transition">GitHub</a>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- About -->
+  <section class="py-12 px-6 md:px-20 bg-white dark:bg-gray-900">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">About Me</h2>
+      <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+        I’m a Computer Science & Engineering graduate using the MEARN stack, penetration testing, and open-source technologies to fight for justice, build secure platforms, and empower others through mentorship.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="py-12 bg-gray-100 dark:bg-gray-800 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-10">Skills</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center">
+        <div class="bg-white dark:bg-gray-700 p-4 rounded-xl shadow-md hover:scale-105 transition">MEARN Stack</div>
+        <div class="bg-white dark:bg-gray-700 p-4 rounded-xl shadow-md hover:scale-105 transition">Penetration Testing</div>
+        <div class="bg-white dark:bg-gray-700 p-4 rounded-xl shadow-md hover:scale-105 transition">Python & C++</div>
+        <div class="bg-white dark:bg-gray-700 p-4 rounded-xl shadow-md hover:scale-105 transition">Cybersecurity</div>
+        <div class="bg-white dark:bg-gray-700 p-4 rounded-xl shadow-md hover:scale-105 transition">Mentorship</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="py-12 px-6 bg-white dark:bg-gray-900">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-10">Projects</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition">
+          <h3 class="text-xl font-bold">EGA Mentorship Platform</h3>
+          <p class="mt-2 text-sm">Empowering youth through connections, jobs, and mentorship.</p>
+        </div>
+        <div class="bg-gradient-to-r from-purple-500 to-pink-600 text-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition">
+          <h3 class="text-xl font-bold">Cyber Awareness Blog</h3>
+          <p class="mt-2 text-sm">Educational content on safe internet use and security tips.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume -->
+  <section class="py-12 bg-gray-100 dark:bg-gray-800 text-center px-6">
+    <h2 class="text-3xl font-bold mb-4">Want to Know More?</h2>
+    <p class="mb-6">Download my latest resume and connect with me!</p>
+    <a href="images/RobertAryeh_Resume.pdf" download class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Download Resume</a>
+  </section>
+
+  <!-- Contact Form using Formspree -->
+  <section class="py-12 px-6 bg-white dark:bg-gray-900">
+    <div class="max-w-lg mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+      <form action="https://formspree.io/f/mwkgyvry" method="POST" class="space-y-4">
+        <input type="text" name="name" placeholder="Your Name" class="w-full p-3 rounded-lg border" required />
+        <input type="email" name="email" placeholder="Your Email" class="w-full p-3 rounded-lg border" required />
+        <textarea name="message" placeholder="Your Message" class="w-full p-3 rounded-lg border h-32" required></textarea>
+        <button type="submit" class="w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="text-center p-4 text-sm opacity-70">
+    © 2025 Robert Aryeh. All Rights Reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

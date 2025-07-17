@@ -1,0 +1,56 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+html {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.hero {
+  background-image: url('images/kofi.jpg');
+  background-repeat: repeat-x;            /* repeat horizontally */
+  background-size: 33.33% auto;           /* 3 tiles side-by-side */
+  background-position: center;
+  background-color: #000;
+}
+
+
+section h3 {
+  border-left: 5px solid #3b82f6;
+  padding-left: 10px;
+  margin-bottom: 1rem;
+}
+img.rounded-full {
+  transition: transform 0.3s ease;
+}
+img.rounded-full:hover {
+  transform: scale(1.05);
+}
+form input,
+form textarea {
+  background-color: #f9fafb;
+  border: 1px solid #d1d5db;
+  outline: none;
+  transition: border 0.3s ease;
+}
+form input:focus,
+form textarea:focus {
+  border-color: #3b82f6;
+}
+.dark form input,
+.dark form textarea {
+  background-color: #374151;
+  color: #f9fafb;
+  border: 1px solid #4b5563;
+}
+.dark form input:focus,
+.dark form textarea:focus {
+  border-color: #3b82f6;
+}
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+a:hover {
+  text-decoration: underline;
+}
